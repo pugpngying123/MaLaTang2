@@ -159,7 +159,7 @@
     
       //设置偏移量
     int offset=(self.showCollectViewShowData.count/3)*100;
-    self.clv_collectViewShow.frame=CGRectMake(0, 53, 320, 100+offset);
+   self.clv_collectViewShow.frame=CGRectMake(0, 53, 320, 100+offset);
     self.tbv_homeTable.frame=CGRectMake(0,120+offset , 320, 351);
     self.slv_home.contentSize=CGSizeMake(320, 450+offset);
 }

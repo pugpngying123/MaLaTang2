@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5038E88C-37AF-46E3-8DAF-DAE942B8DFB2</string>
+	<string>B0C5CDCD-473F-4811-8D57-2E1BDD4F252F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ShoppingList</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/pugpngying123/MaLaTang2.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>购物清单1/ShoppingList/ShoppingList.xcodeproj</string>
+	<string>ShoppingList/ShoppingList.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F6D3E3D47FE093883BE87F63B992991156AC9E64</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/pugpngying123/MaLaTang2.git</string>
