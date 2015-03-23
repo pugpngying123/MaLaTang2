@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,19 +16,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_img_search.jpg" id="wTs-6F-XBT">
-                                        <rect key="frame" x="0.0" y="10" width="40" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.74999999999999978" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What would you like" borderStyle="bezel" minimumFontSize="17" id="CT5-Jg-WMt">
-                                        <rect key="frame" x="53" y="10" width="252" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="gkT-i2-Haw"/>
-                                        </connections>
-                                    </textField>
                                     <tableView clipsSubviews="YES" alpha="0.69999999999999973" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="63l-ry-TLf">
                                         <rect key="frame" x="0.0" y="194" width="320" height="351"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +68,6 @@
                         <outlet property="img_interface" destination="0cL-hV-Z6F" id="qpD-si-ru3"/>
                         <outlet property="slv_home" destination="lTw-9j-ggB" id="Dd6-p2-dA8"/>
                         <outlet property="tbv_homeTable" destination="63l-ry-TLf" id="mif-fC-q2f"/>
-                        <outlet property="txt_input" destination="CT5-Jg-WMt" id="3Xm-qv-ysR"/>
                         <outlet property="v_interface" destination="cyn-k0-bjf" id="mhh-wo-lEO"/>
                     </connections>
                 </viewController>
@@ -136,7 +122,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home_img_search.jpg" width="128" height="128"/>
         <image name="interface.jpg" width="642" height="300"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

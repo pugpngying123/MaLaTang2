@@ -22,22 +22,28 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    //完成按钮
     UIBarButtonItem *item=[[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(wancheng)];
     self.navigationItem.rightBarButtonItem=item;
-    //注册
+    
+    
+    //注册SelectedCollectionViewCell
     [self.clv_selected registerNib:[UINib nibWithNibName:@"SelectedCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"SelectedCollectionViewCell"];
  
 }
 
+//个数
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.arr_dataArray.count;
 }
+
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
     SelectedCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"SelectedCollectionViewCell" forIndexPath:indexPath];
     
+    //如果存在则设置显示
     if ([self.vc.showCollectViewShowData containsObject:[self.arr_dataArray objectAtIndex:indexPath.row]])
     {
         cell.alpha=0.5;
@@ -57,6 +63,7 @@
     SelectedCollectionViewCell *cell=(SelectedCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     
  
+    //如果所选的cell已经在前边的数组中，则remove所选的物品；否则添加
     if ([self.vc.showCollectViewShowData containsObject:[self.arr_dataArray objectAtIndex:indexPath.row ]])
     {
         cell.alpha=1;
@@ -67,16 +74,12 @@
     else
     {
         [self.vc.showCollectViewShowData addObject:[self.arr_dataArray objectAtIndex:indexPath.row ]] ;
-    
         cell.alpha=0.5;
         cell.backgroundColor=[UIColor redColor];
         
     }
 
   
-    
- 
-
 }
 -(void)wancheng
 {

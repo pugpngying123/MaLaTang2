@@ -13,7 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *clv_selected;
 
-@property (nonatomic,strong) NSArray *arr_dataArray;
+@property (nonatomic,strong) NSArray *arr_dataArray;//要显示的数组内容
 
 @property (nonatomic , weak) ViewController *vc;
 
