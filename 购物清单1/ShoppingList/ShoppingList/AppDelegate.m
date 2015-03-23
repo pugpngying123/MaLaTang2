@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
-@interface AppDelegate ()
+
+@interface AppDelegate()
 
 @end
 
@@ -16,12 +16,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+   
     UIStoryboard *mainS=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ViewController *vc=[mainS instantiateViewControllerWithIdentifier:@"ViewController"];
     UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"img_nav_background"] forBarMetrics: UIBarMetricsDefault];
     self.window .rootViewController=nav;
+    //设置navigationBar 背景
+    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"img_nav_background"] forBarMetrics: UIBarMetricsDefault];
+    
    return YES;
     
 }
