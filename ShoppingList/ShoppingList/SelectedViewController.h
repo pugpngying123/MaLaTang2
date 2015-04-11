@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
-
+#import "AppDelegate.h"
 @interface SelectedViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
+{
+    AppDelegate *app;
+}
 
 @property (weak, nonatomic) IBOutlet UICollectionView *clv_selected;
 

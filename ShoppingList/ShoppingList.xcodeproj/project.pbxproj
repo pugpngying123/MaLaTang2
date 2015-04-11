@@ -64,6 +64,7 @@
 		9E6ECBEC19F7A4160043BC0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E6ECBEA19F7A4160043BC0D /* LaunchScreen.xib */; };
 		9E6ECBF819F7A4160043BC0D /* ShoppingListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6ECBF719F7A4160043BC0D /* ShoppingListTests.m */; };
 		9E6ECC0219F7ABAE0043BC0D /* home_img_search.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E6ECC0119F7ABAE0043BC0D /* home_img_search.jpg */; };
+		C6285F011AD2909600C79628 /* count.m in Sources */ = {isa = PBXBuildFile; fileRef = C6285F001AD2909600C79628 /* count.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,8 @@
 		9E6ECBF619F7A4160043BC0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E6ECBF719F7A4160043BC0D /* ShoppingListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingListTests.m; sourceTree = "<group>"; };
 		9E6ECC0119F7ABAE0043BC0D /* home_img_search.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home_img_search.jpg; path = ShoppingList/home_img_search.jpg; sourceTree = "<group>"; };
+		C6285EFF1AD2909600C79628 /* count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = count.h; sourceTree = "<group>"; };
+		C6285F001AD2909600C79628 /* count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = count.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +310,8 @@
 			children = (
 				9E6ECBDF19F7A4160043BC0D /* AppDelegate.h */,
 				9E6ECBE019F7A4160043BC0D /* AppDelegate.m */,
+				C6285EFF1AD2909600C79628 /* count.h */,
+				C6285F001AD2909600C79628 /* count.m */,
 				9E6ECBE219F7A4160043BC0D /* ViewController.h */,
 				9E6ECBE319F7A4160043BC0D /* ViewController.m */,
 				9E6ECBE519F7A4160043BC0D /* Main.storyboard */,
@@ -499,6 +504,7 @@
 				9E3669BF19F9F940007F2276 /* SelectedViewController.m in Sources */,
 				9E6AA3EE19FDD8CA0016F700 /* ShowCollectionViewCell.m in Sources */,
 				9E3669C319F9FE36007F2276 /* SelectedCollectionViewCell.m in Sources */,
+				C6285F011AD2909600C79628 /* count.m in Sources */,
 				9E6ECBE419F7A4160043BC0D /* ViewController.m in Sources */,
 				9E6ECBE119F7A4160043BC0D /* AppDelegate.m in Sources */,
 				9E6ECBDE19F7A4160043BC0D /* main.m in Sources */,

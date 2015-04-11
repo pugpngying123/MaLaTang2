@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+      app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     //完成按钮
     UIBarButtonItem *item=[[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(wancheng)];
     self.navigationItem.rightBarButtonItem=item;
@@ -80,6 +81,12 @@
     }
 
   
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    NSString *ss= app.count.counts;
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"消费情况" message:ss  delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles: nil];
+    [alertView show];
 }
 -(void)wancheng
 {

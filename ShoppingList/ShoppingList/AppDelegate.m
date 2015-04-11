@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,11 +18,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    
+    
+    NSData *myObject = [ud objectForKey:@"count"];
+    self.count = (count *)[NSKeyedUnarchiver unarchiveObjectWithData: myObject];
+    
+    if (self.count == nil)
+        self.count = [[count alloc] init];
+    else{
+        self.count.counts=nil;
+       
+    }
+    
+    
+    
+
     UIStoryboard *mainS=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ViewController *vc=[mainS instantiateViewControllerWithIdentifier:@"ViewController"];
     UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
     [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"img_nav_background"] forBarMetrics: UIBarMetricsDefault];
     self.window .rootViewController=nav;
+    
+    
+    
    return YES;
     
 }
