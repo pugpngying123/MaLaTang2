@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    
+    NSLog(@"1232");
     
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     
